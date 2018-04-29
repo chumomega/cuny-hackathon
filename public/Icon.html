@@ -14,26 +14,26 @@
     <link href="/images/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
     <title></title>
     <style>
-    #map {
-        height: 100%;
-      }
-      /* Optional: Makes the sample page fill the window. */
-      html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
+        #map {
+            height: 100%;
+        }
+        /* Optional: Makes the sample page fill the window. */
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
         #map-container{
-              width: 600px;
-              height: 300px;
-              
-          }
+            width: 600px;
+            height: 300px;
+
+        }
         #marker-sect{
             padding:50px;
             margin:0 auto;
         }
-        
-    
+
+
     </style>
 </head>
 <body>
@@ -46,9 +46,10 @@
                 </div>
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="./index.html">Home</a></li>
-                    <li class="active"><a href="./feed.html">Map1</a></li>
-                    <li><a href="./Icon.html">Map2</a></li>
+                    <li><a href="./feed.html">Map1</a></li>
+                    <li class="active"><a href="./Icon.html">Map2</a></li>
                     <li><a href="./report.html">Report</a></li>
+
                 </ul>
             </div>
         </nav>
@@ -56,10 +57,10 @@
 </header>
 
 <div class="container-fluid" style="padding: 200px; background-color:#2f3d46">
-        <div id="map-container" style="width: 700px; height: 500px; margin-left: 200px">
+    <div id="map-container" style="width: 700px; height: 500px; margin-left: 200px">
         <div id="map" ></div>
-      </div>
-    
+    </div>
+
     <div id="marker-sect" style="margin-left: 260px">
         <button onclick=createMarker();>Create new Marker</button>
         <input type="number" name="latitude" id="lat">
@@ -67,18 +68,18 @@
     </div>
 
 
-      
-      
-</div>
-    
-      
-    
 
-    <script src="https://cdn.firebase.com/js/client/2.3.2/firebase.js"></script>
-    <script src="app.js"></script>
-    <script async defer
+
+</div>
+
+
+
+
+<script src="https://cdn.firebase.com/js/client/2.3.2/firebase.js"></script>
+<script src="app.js"></script>
+<script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBtc7cFQnS_1ww6IIGAe7ahK-7N5iyV0S8&libraries=visualization&callback=initMap">
-    </script>
+</script>
 </body>
 </html>
 
