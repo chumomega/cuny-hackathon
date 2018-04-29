@@ -55,12 +55,22 @@
     </div>
 </header>
 
-<div class="container-fluid" style="padding: 200px; background-color: #222">
-        <div id="map-container">
-        <div id="map"></div>
+<div class="container-fluid" style="padding: 200px; background-color:#2f3d46">
+        <div id="map-container" style="width: 700px; height: 500px; margin-left: 200px">
+        <div id="map" ></div>
       </div>
     
-    <div id="marker-sect">
+    <div id="marker-sect" style="margin-left: 260px">
+        <button onclick=createMarker();>Create new Marker</button>
+        <input type="number" name="latitude" id="lat">
+        <input type="number" name="longitude" id="long">
+    </div>
+
+    <div id="map-container" style="width: 700px; height: 500px; margin-left: 200px">
+        <div id="map" ></div>
+    </div>
+
+    <div id="marker-sect" style="margin-left: 260px">
         <button onclick=createMarker();>Create new Marker</button>
         <input type="number" name="latitude" id="lat">
         <input type="number" name="longitude" id="long">

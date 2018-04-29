@@ -32,7 +32,8 @@
         </nav>
     </div>
 </header>
-<div class="container" style="padding: 40px"></div>
+<div class="container-fluid" style="padding: 40px">
+<div class="container">
 <form >
     <h1>Report Incident</h1>
     <div class="form-group">
@@ -44,15 +45,21 @@
         <input type="email" class="form-control" id="email">
     </div>
     <div class="form-group">
-        <label for="incident">Incident-Name:</label>
+        <label for="incident">Title:</label>
         <input type="text" class="form-control" id="incident">
     </div>
     <div class="form-group">
         <label for="description">Description:</label>
         <textarea class="form-control" rows="5" id="description"></textarea>
     </div>
+    <div class="form-group">
+        <label for="">Location:</label>
+        <textarea class="form-control" rows="2" id="location"></textarea>
+    </div>
 
     <button type="submit" class="btn btn-primary">Submit</button>
 </form>
+</div>
+</div>
 </body>
 </html>
