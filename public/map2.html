@@ -31,7 +31,42 @@
     </style>
   </head>
   <body>
-    <div id="map"></div>
+      
+      
+      <header>
+
+    <div class="row">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="./index.html">Nuisance</a>
+                </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="./index.html">Home</a></li>
+                    <li><a href="./feed.html">Feed</a></li>
+                    <li><a href="./report.html">Report</a></li>
+                    <!--<li><a href="#">Page 3</a></li>-->
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+</header>
+<div class="container-fluid" style="background-color:#6ea2ad; padding-bottom: 300px" >
+    <div class="row" style="padding-top: 50px">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-2">
+            <img src="http://icons.iconarchive.com/icons/ilicon/the-circus/32/oops-icon.png" alt="App Icon" width="70px"
+                 ; height="70px">
+        </div>
+        <div class="col-sm-1"></div>
+        <div class="col-sm-4">
+            <h1 style="font-size: 40px; text-align: center; font-weight: 300; text-transform: capitalize; font-family: sans-serif; color: white; padding-left: 30px">
+                welcome to Nuisance</h1>
+        </div>
+    </div>
+    <div class="container" style="background-color:#a6e1ec; padding-bottom: 50px">
+        <div id="map"></div>
     <div id="legend"><h3>Legend</h3></div>
     <script>
       var map;
@@ -145,6 +180,15 @@
         map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(legend);
       }
     </script>
+    </div>
+</div>
+      
+      
+      
+      
+      
+      
+      
     <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBtc7cFQnS_1ww6IIGAe7ahK-7N5iyV0S8&libraries=visualization&callback=initMap">
     </script>
